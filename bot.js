@@ -139,17 +139,7 @@ bot.on("message", async message => {
 
     return message.channel.send(botembed);
   }
-  
-  //!say message
-  
-  if(cmd === `${prefix}say'){
-  
-      if(!message.member.hasPermission("ADMINISTRATOR")) return;
-      const sayMessage = args.join(" ");
-      message.delete().catch();
-      message.channel.send(sayMessage);
-
-}
+    
 }
 
 });
